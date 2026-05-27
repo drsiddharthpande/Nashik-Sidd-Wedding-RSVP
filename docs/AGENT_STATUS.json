@@ -1,0 +1,24 @@
+{
+  "last_updated": "2026-02-23T20:58:09+05:30",
+  "active_phase": null,
+  "active_phase_name": null,
+  "executor": null,
+  "agent2_lock": {
+    "allowed_phase_id": null
+  },
+  "phases": {
+    "PHASE_1": {
+      "status": "COMPLETED",
+      "executor": "AGENT_2",
+      "started": "2026-02-23T20:58:09+05:30",
+      "completed": "2026-02-23T21:09:44+05:30",
+      "commit": "331fe1d"
+    },
+    "PHASE_2": {
+      "status": "BLOCKED",
+      "executor": "AGENT_2",
+      "started": null,
+      "completed": null
+    }
+  }
+}

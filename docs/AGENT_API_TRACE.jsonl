@@ -1,0 +1,2 @@
+<!-- AGENT_API_TRACE.jsonl — append-only, one JSON object per line -->
+<!-- Each line = one OpenAI API call. See INFO_AI_RULES.md section 6 for schema. -->
