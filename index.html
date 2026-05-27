@@ -404,18 +404,24 @@
     </div>
 
     <script>
-        // JS Fallback for browsers that do not support :has()
+        // JS Fallback for browsers that do not support :has() and validation logic
         const sulaYes = document.getElementById('sula_yes');
         const sulaNo = document.getElementById('sula_no');
         const alcoholWrapper = document.getElementById('alcohol_wrapper');
+        const alcoholRadios = document.getElementsByName('alcohol');
         
         function updateAlcoholVisibility() {
             if (sulaYes.checked) {
                 alcoholWrapper.classList.add('fallback-visible');
+                // Make alcohol preference required when attending Sula
+                alcoholRadios.forEach(radio => radio.setAttribute('required', 'required'));
             } else {
                 alcoholWrapper.classList.remove('fallback-visible');
-                // Clear alcohol selection if they switch Sula to No
-                document.getElementsByName('alcohol').forEach(radio => radio.checked = false);
+                // Clear alcohol selection and remove required attribute when not attending Sula
+                alcoholRadios.forEach(radio => {
+                    radio.checked = false;
+                    radio.removeAttribute('required');
+                });
             }
         }
 
