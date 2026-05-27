@@ -16,12 +16,12 @@ Human-readable record of all major changes. Reference OpenAI response_ids for tr
 - **API Calls**: `REVIEW_...` → response_id (or "None")
 ```
 
-## [2026-05-27] — Set up RSVP form in Index.html with Formspree URL (commit: 7e818bb)
+## [2026-05-27] — Set up RSVP form in index.html with Formspree URL (commit: 9414884)
 
 - **Phase**: PHASE_2
 - **Executor**: Antigravity
 - **Changes**:
-  - Created: `Index.html`
+  - Created: `index.html` (renamed from `Index.html` to fix case-sensitivity lookup on Pages)
 - **API Calls**: None
 
 ---
